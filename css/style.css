@@ -1,0 +1,187 @@
+/* Padrão celular */
+ 
+/* Cor de fundo da página e margem*/
+ 
+body {
+  margin: 0;
+  padding: 0;  
+  background: #1E1D25;
+}
+ 
+/* Configuração ícone e imagem */
+ 
+#icone-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+ 
+#icone-login span {
+    font-size: 7rem;
+    color:white;
+}
+ 
+ 
+ 
+#título {
+    /* Centralizando h1 */
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+ 
+    /* Mexendo no elemento filho h1 */
+ 
+    font-size: 1.5rem;
+    font-family: "Madimi One", sans-serif;
+    color: white;
+    letter-spacing: 5px;
+}
+
+#título-cadastro {
+        /* Centralizando h1 */
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        margin: 0;
+     
+        /* Mexendo no elemento filho h1 */
+     
+        font-size: 1.2rem;
+        font-family: "Madimi One", sans-serif;
+        color: white;
+        letter-spacing: 5px;
+}
+ 
+#login {
+    display: flex;
+    justify-content: center;
+}
+ 
+#quadrado-login {
+    width: 90%;
+    height: 58vh;
+    box-shadow: 0 0 10px;
+}
+
+#quadrado-login-cadastro {
+    width: 90%;
+    height: 100vh;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px;
+}
+/* Manipulação de inputs */
+
+#formulario {
+    font-size: 1.3rem;
+}
+ 
+#formulario div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.6rem;
+}
+ 
+#formulario label {
+    color: white;
+}
+
+#formulario input {
+    width: 90%;
+    height: 4vh;
+    font-size: 1.2em;
+    border: #1E1D25;
+    background-color: #1E1D25;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+
+#formulario input:focus {
+    outline: none;
+} 
+
+#filho input{
+    display: flex;
+    flex-direction: row;
+}
+
+#formulario button {
+    width: 60%;
+    height: 7vh;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: #1D4A5F;
+    background: #F64348;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+#formulario button:hover {
+    transition: 0.3s;
+    transform: scale(1.10);
+}
+
+#formulario a {
+    margin-left: 1.1rem;
+    color: white;
+}
+
+/* Tablet */
+@media only screen and (min-width: 700px) {
+    #quadrado-branco-login-cadastro{
+        width:70%;
+        height: 100vh;
+    }
+
+    #quadrado-branco-login{
+        width:60%;
+        height: 57vh;
+    }
+
+}
+
+/* Computador pequeno */
+
+@media only screen and (min-width: 1024px) {
+    #quadrado-branco-login-cadastro{
+        width: 60%;
+        height: 100vh;
+    }
+
+    #quadrado-branco-login{
+        width:50%;
+        height: 57vh;
+    }
+}
+
+/* Computador grande */
+
+@media only screen and (min-width: 1920px) {
+    #quadrado-branco-login-cadastro {
+        width: 40%;
+        height: 86vh;
+        margin: 2rem;
+    }
+
+    #quadrado-branco-login{
+        width:30%;
+        height: 50vh;
+    }
+
+    #formulario {
+        font-size: 1.7rem;
+    }
+}
